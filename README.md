@@ -2,14 +2,30 @@
 
 dash-pager is a Dash component library.
 
-Generic pagination component for dash and dash bootstrap components
+Generic pagination component for dash and dash bootstrap components. 
+
+The component is a selector for an interval of values.
+
+![Screenshot](./Screenshot.png)
+
+Example usage:
+
+    ```
+    import dash_pager
+    
+    dash_pager.Pager(
+        id='input',
+        value=[1,10],
+        maxValue=10,
+    ),
+    ```
 
 Get started with:
 1. Install Dash and its dependencies: https://dash.plotly.com/installation
 2. Run `python usage.py`
 3. Visit http://localhost:8050 in your web browser
 
-![Screenshot](./Screenshot.png)
+
 
 ## Contributing
 

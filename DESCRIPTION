@@ -1,6 +1,6 @@
 Package: dashPager
 Title: Generic pagination component for dash and dash bootstrap components
-Version: 0.0.1
+Version: 0.1.0
 Description: Generic pagination component for dash and dash bootstrap components
 Depends: R (>= 3.0.2)
 Imports: 

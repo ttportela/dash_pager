@@ -1,6 +1,6 @@
 {
   "name": "dash_pager",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Generic pagination component for dash and dash bootstrap components",
 "repository": {
     "type": "git",

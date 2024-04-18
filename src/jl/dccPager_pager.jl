@@ -14,11 +14,12 @@ which is editable by the user.
 Keyword arguments:
 - `id` (String; optional): The ID used to identify this component in Dash callbacks.
 - `maxValue` (Real; required): A label that will be printed when this component is rendered.
+- `minValue` (Real; optional): The minimum number of elements displayed in the input.
 - `symbols` (Array of Strings; optional): The text symbols for the buttons.
 - `value` (Array of Reals; optional): The value displayed in the input.
 """
 function dccPager_pager(; kwargs...)
-        available_props = Symbol[:id, :maxValue, :symbols, :value]
+        available_props = Symbol[:id, :maxValue, :minValue, :symbols, :value]
         wild_props = Symbol[]
         return Component("dccPager_pager", "Pager", "dash_pager", available_props, wild_props; kwargs...)
 end

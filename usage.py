@@ -13,7 +13,7 @@ app.layout = html.Div([
     dash_pager.Pager(
         id='input',
         value=[1,10],
-        maxValue=10,
+        maxValue=100,
 #        symbols=['|<','<','>','>|']
     ),
     html.Div(id='output')

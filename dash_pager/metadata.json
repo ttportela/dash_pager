@@ -28,6 +28,17 @@
         "required": true,
         "description": "A label that will be printed when this component is rendered."
       },
+      "minValue": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The minimum number of elements displayed in the input.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
       "symbols": {
         "type": {
           "name": "arrayOf",
@@ -79,6 +90,17 @@
         },
         "required": true,
         "description": "A label that will be printed when this component is rendered."
+      },
+      "minValue": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The minimum number of elements displayed in the input.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
       },
       "symbols": {
         "type": {

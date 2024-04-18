@@ -10,7 +10,6 @@ The component is a selector for an interval of values.
 
 Example usage:
 
-    ```
     import dash_pager
     
     dash_pager.Pager(
@@ -18,7 +17,7 @@ Example usage:
         value=[1,10],
         maxValue=10,
     ),
-    ```
+
 
 Get started with:
 1. Install Dash and its dependencies: https://dash.plotly.com/installation

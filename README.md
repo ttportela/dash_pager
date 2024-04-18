@@ -8,7 +8,7 @@ The component is a selector for an interval of values.
 
 ![Screenshot](./Screenshot.png)
 
-Example usage:
+Example usage (add to a dash layout):
 
     import dash_pager
     
@@ -16,7 +16,7 @@ Example usage:
         id='input',
         value=[1,10],
         maxValue=10,
-    ),
+    )
 
 
 Get started with:

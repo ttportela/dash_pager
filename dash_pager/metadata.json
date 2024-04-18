@@ -53,6 +53,13 @@
           "computed": false
         }
       },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "The style of the container (div)"
+      },
       "setProps": {
         "type": {
           "name": "func"
@@ -115,6 +122,13 @@
           "value": "['','','','']",
           "computed": false
         }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "The style of the container (div)"
       },
       "setProps": {
         "type": {

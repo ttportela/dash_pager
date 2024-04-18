@@ -10,8 +10,8 @@ ExampleComponent is an example component. It takes a property, `label`, and disp
 }
 
 \usage{
-dccPagerPager(id=NULL, maxValue=NULL, minValue=NULL, symbols=NULL,
-value=NULL)
+dccPagerPager(id=NULL, maxValue=NULL, minValue=NULL, style=NULL,
+symbols=NULL, value=NULL)
 }
 
 \arguments{
@@ -20,6 +20,8 @@ value=NULL)
 \item{maxValue}{Numeric. A label that will be printed when this component is rendered.}
 
 \item{minValue}{Numeric. The minimum number of elements displayed in the input.}
+
+\item{style}{Named list. The style of the container (div)}
 
 \item{symbols}{List of characters. The text symbols for the buttons.}
 

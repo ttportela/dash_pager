@@ -15,6 +15,7 @@ app.layout = html.Div([
         value=[1,10],
         maxValue=100,
 #        symbols=['|<','<','>','>|']
+        style={'border': '1px solid black'}
     ),
     html.Div(id='output')
 ])

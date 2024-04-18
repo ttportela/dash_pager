@@ -22,6 +22,9 @@ Keyword arguments:
 - minValue (number; default 1):
     The minimum number of elements displayed in the input.
 
+- style (dict; optional):
+    The style of the container (div).
+
 - symbols (list of strings; default ['','','','']):
     The text symbols for the buttons.
 
@@ -32,10 +35,10 @@ Keyword arguments:
     _namespace = 'dash_pager'
     _type = 'Pager'
     @_explicitize_args
-    def __init__(self, id=Component.UNDEFINED, value=Component.UNDEFINED, maxValue=Component.REQUIRED, minValue=Component.UNDEFINED, symbols=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['id', 'maxValue', 'minValue', 'symbols', 'value']
+    def __init__(self, id=Component.UNDEFINED, value=Component.UNDEFINED, maxValue=Component.REQUIRED, minValue=Component.UNDEFINED, symbols=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['id', 'maxValue', 'minValue', 'style', 'symbols', 'value']
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['id', 'maxValue', 'minValue', 'symbols', 'value']
+        self.available_properties = ['id', 'maxValue', 'minValue', 'style', 'symbols', 'value']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()

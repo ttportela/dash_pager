@@ -1,9 +1,9 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
 #' @export
-dccPagerPager <- function(id=NULL, maxValue=NULL, minValue=NULL, symbols=NULL, value=NULL) {
+dccPagerPager <- function(id=NULL, maxValue=NULL, minValue=NULL, style=NULL, symbols=NULL, value=NULL) {
     
-    props <- list(id=id, maxValue=maxValue, minValue=minValue, symbols=symbols, value=value)
+    props <- list(id=id, maxValue=maxValue, minValue=minValue, style=style, symbols=symbols, value=value)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -11,7 +11,7 @@ dccPagerPager <- function(id=NULL, maxValue=NULL, minValue=NULL, symbols=NULL, v
         props = props,
         type = 'Pager',
         namespace = 'dash_pager',
-        propNames = c('id', 'maxValue', 'minValue', 'symbols', 'value'),
+        propNames = c('id', 'maxValue', 'minValue', 'style', 'symbols', 'value'),
         package = 'dashPager'
         )
 

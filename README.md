@@ -9,6 +9,8 @@ Get started with:
 2. Run `python usage.py`
 3. Visit http://localhost:8050 in your web browser
 
+![Screenshot](./Screenshot.png)
+
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md)

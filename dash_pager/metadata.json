@@ -25,8 +25,12 @@
         "type": {
           "name": "number"
         },
-        "required": true,
-        "description": "A label that will be printed when this component is rendered."
+        "required": false,
+        "description": "A label that will be printed when this component is rendered.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
       },
       "minValue": {
         "type": {
@@ -35,7 +39,7 @@
         "required": false,
         "description": "The minimum number of elements displayed in the input.",
         "defaultValue": {
-          "value": "1",
+          "value": "0",
           "computed": false
         }
       },
@@ -95,8 +99,12 @@
         "type": {
           "name": "number"
         },
-        "required": true,
-        "description": "A label that will be printed when this component is rendered."
+        "required": false,
+        "description": "A label that will be printed when this component is rendered.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
       },
       "minValue": {
         "type": {
@@ -105,7 +113,7 @@
         "required": false,
         "description": "The minimum number of elements displayed in the input.",
         "defaultValue": {
-          "value": "1",
+          "value": "0",
           "computed": false
         }
       },

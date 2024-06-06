@@ -16,10 +16,10 @@ Keyword arguments:
 - id (string; optional):
     The ID used to identify this component in Dash callbacks.
 
-- maxValue (number; required):
+- maxValue (number; default 0):
     A label that will be printed when this component is rendered.
 
-- minValue (number; default 1):
+- minValue (number; default 0):
     The minimum number of elements displayed in the input.
 
 - style (dict; optional):
@@ -35,7 +35,7 @@ Keyword arguments:
     _namespace = 'dash_pager'
     _type = 'Pager'
     @_explicitize_args
-    def __init__(self, id=Component.UNDEFINED, value=Component.UNDEFINED, maxValue=Component.REQUIRED, minValue=Component.UNDEFINED, symbols=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+    def __init__(self, id=Component.UNDEFINED, value=Component.UNDEFINED, maxValue=Component.UNDEFINED, minValue=Component.UNDEFINED, symbols=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
         self._prop_names = ['id', 'maxValue', 'minValue', 'style', 'symbols', 'value']
         self._valid_wildcard_attributes =            []
         self.available_properties = ['id', 'maxValue', 'minValue', 'style', 'symbols', 'value']
@@ -44,10 +44,5 @@ Keyword arguments:
         _locals = locals()
         _locals.update(kwargs)  # For wildcard attrs and excess named props
         args = {k: _locals[k] for k in _explicit_args}
-
-        for k in ['maxValue']:
-            if k not in args:
-                raise TypeError(
-                    'Required argument `' + k + '` was not specified.')
 
         super(Pager, self).__init__(**args)

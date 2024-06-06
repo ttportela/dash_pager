@@ -10,6 +10,7 @@ external_stylesheets=[
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div([
+#    dash_pager.Pager(),
     dash_pager.Pager(
         id='input',
         value=[1,10],
@@ -23,6 +24,7 @@ app.layout = html.Div([
 
 @callback(Output('output', 'children'), Input('input', 'value'))
 def display_output(value):
+    print('Value Changed!', value)
     return 'You have entered {}'.format(value)
 
 

@@ -13,7 +13,7 @@ It renders an input with the property `value`
 which is editable by the user.
 Keyword arguments:
 - `id` (String; optional): The ID used to identify this component in Dash callbacks.
-- `maxValue` (Real; required): A label that will be printed when this component is rendered.
+- `maxValue` (Real; optional): A label that will be printed when this component is rendered.
 - `minValue` (Real; optional): The minimum number of elements displayed in the input.
 - `style` (Dict; optional): The style of the container (div)
 - `symbols` (Array of Strings; optional): The text symbols for the buttons.
